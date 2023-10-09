@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+
+  <style>
+    /* Style for the navigation bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+      background-color: hsl(54, 90%, 49%);
+      padding: 20px 20px;
+      cursor: pointer;
+    }
+
+    /* Style for the logo */
+    .logo img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer
+    }
+
+
+    /* Style for the navigation links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      font-size: large;
+    }
+
+    nav a:hover {
+      float: red;
+    }
+
+    /* Style for the navigation link items */
+    .nav-link {
+      color: hsl(0, 0%, 100%);
+      text-decoration: none;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+
+
+    .paras {
+      display: block;
+      padding: 0;
+      margin: 0;
+      color: #f8f6f6;
+      text-align: justify;
+      top: 30px;
+    }
+
+    /* .secright {
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 200p;
+      color: #f8f6f6;
+      font-size: larger;
+    } */
+
+    .center {
+      width: 200px;
+      height: 130px;
+      position: relative;
+      top: 130px;
+      left: 430px;
+    }
+
+    .li {
+      justify-content: center;
+      text-align: center;
+      font-size: xx-large;
+      color: #f8f6f6;
+      right: 190px;
+
+    }
+
+    .h3 {
+      font-size: xx-large;
+      color: #f8f6f6;
+      line-height: 19px;
+      left: 300px;
+    }
+
+
+
+    .group {
+      color: black;
+      text-align: center;
+      justify-content: center;
+      margin: 01px;
+      font-size: large x;
+
+
+    }
+
+    .data img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .babu {
+
+      position: relative;
+      text-align: justify;
+      justify-self: center;
+
+      padding: 80px;
+      margin: 0px;
+      text-decoration: none;
+      background-color: black;
+      color: ivory;
+    }
+
+    /* Reset some default styles */
+    body,
+    ul {
+      margin: 0;
+    /* padding: 50px; */
+    top: 50px;
+      list-style: none;
+      right: 30px;
+      justify-content: center;
+    }
+
+    /* Basic styles for the header */
+    header {
+      background-color: #fcf7f7;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    /* Style the navigation menu */
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+      position: relative;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Style the dropdown menu */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      z-index: 1;
+      top: 100%;
+      color: #f8f6f6;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      padding: 10px 0;
+      text-align: center;
+    }
+    .dropdown-menu a{
+      text-decoration: none;
+    }
+    .colos {
+      color: #f8f6f6;
+     font-size: large;
+     float: red;}
+     /* do-pdown 222 */
+     /* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown button (trigger) */
+.dropbtn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+/* Show the dropdown content when the button is hovered over */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+  
+
+    /* Add more styles for your website content and footer as needed */
+  </style>
+
+</head>
+
+<body>
+
+  <div class="navbar">
+    <!-- <a href="#" class="logo">Logo</a> -->
+    <div class="logo">
+      <img src="c:\Users\KKT\Downloads\pak.jfif" alt="not">
+    </div>
+    <ul class="nav-links">
+
+
+
+
+
+
+
+      <li><a href="Home.html" class="nav-link">Home</a></li>
+      <li><a href="sindh.html" class="nav-link">Sindh</a></li>
+      <li><a href="punjab.html" class="nav-link">Punjab</a></li>
+      <li><a href="kpk.html" class="nav-link">KPK</a></li>
+      <li><a href="baluchistan.html" class="nav-link">Bolochistan</a>
+
+      
+      <li class="dropdown">
+        <div class="colos"> 
+                 <h5>capital </h5></div>
+        <ul class="dropdown-menu">
+          <li><a href="karachi.html">Karachi</a></li>
+          <li><a href="lohore.html"> Lahore</a></li>
+          <li><a href="peshwar.html">Peshawar</a></li>
+          <li><a href="quetta.html">Quetta</a></li>
+        </ul>
+      </li>
+
+
+  </div>
+  </li>
+  
+
+
+
+  </nav>
+  </ul>
+
+  </div>
+  <!-- slider -->
+  <style>
+    .mySlides {display:none;
+    size: cover;}
+    </style>
+    </head>
+    
+    <body>
+    
+
+    
+    <div class="w3-content w3-section" style="max-width:2000px">
+      <img class="mySlides" src="c:\Users\KKT\Downloads\karachi.jpg" style="width:100%">
+      <img class="mySlides" src="c:\Users\KKT\Downloads\images (1).jfif" style="width:100%">
+      <img class="mySlides" src="c:\Users\KKT\Downloads\images.jfif" style="width:100%">
+    </div>
+    
+    <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
+    
+
+
+  <div class="babu">
+    <center>
+      <h1> Geography:</h1>
+    </center>
+    Physical Geography:
+    Landforms: Study of Earth'sphysical features, such as mountains, valleys, plains, deserts, and coastal formations.
+    Climatology: Study of climate patterns, weather systems, and their impact on the environment and human activities.
+    Hydrology: Study of water distribution, including rivers, lakes, oceans, and groundwater.
+    Human Geography:
+
+    Population Geography: Examines the distribution, growth, migration, and characteristics of human populations.
+    Cultural Geography: Focuses on the study of cultural traits, behaviors, and their spatial distribution.
+    Urban Geography: Analyzes cities and urban areas, including urban planning, infrastructure, and the social dynamics
+    of city life.
+    Political Geography: Explores the relationships between geography and political processes, including borders,
+    territories, and geopolitics.
+    Environmental Geography:
+
+    Ecosystems: Studies the interactions between living organisms and their physical surroundings.
+    Biogeography: Focuses on the distribution of plants and animals across different geographic regions.
+    Natural Resource Management: Addresses the sustainable use and conservation of Earth's resources, such as forests,
+    minerals, and water.
+    Geographic Information Systems (GIS):
+
+    GIS involves the collection, analysis, and interpretation of geographic data using computer technology. It's used in
+    various fields, including urban planning, environmental management, and disaster response.
+    Cartography:
+
+    The art and science of mapmaking. Cartographers create maps that represent the physical and cultural features of
+    Earth's surface.
+    Geomorphology:
+
+    The study of Earth's landforms and the processes that shape them, including erosion, deposition, and tectonic
+    activity.
+    Remote Sensing:
+
+    The use of satellites and other technology to gather information about Earth's surface from a distance. It's used
+    for monitoring changes in land use, environmental conditions, and more.
+    Geopolitics:
+
+    The study of the relationship between geography, politics, and international relations. It examines how geographic
+    factors influence political decisions and conflicts.
+    Cultural Landscape:
+
+    The visible imprint of human activity on the landscape, reflecting the culture, beliefs, and practices of a society.
+    Biomes:
+
+    Large, distinct ecological areas characterized by particular climate conditions, vegetation, and wildlife.
+    Geography plays a crucial role in understanding the world around us, from natural phenomena to human societies and
+    their interactions. It helps us make informed decisions about resource management, urban planning, disaster
+    preparedness, and more.
+    Pakistan is a country located in South Asia. It shares borders with India to the east Afghanistan and Iran to the
+    west, China to the north, and has a coastline along the Arabian Sea to the south
+    <center>
+      <h1>Economy:</h1>
+    </center>
+    Types of Economies:
+
+    Market Economy: Also known as capitalism, this type of economy relies on private individuals and businesses to make
+    most of the economic decisions. Prices, production, and distribution are determined by supply and demand in the
+    marketplace.
+    Command Economy: Also known as socialism or communism, this type of economy is characterized by central government
+    control over production, distribution, and pricing of goods and services.
+    Mixed Economy: Most economies in the world fall into this category. It combines elements of both market and command
+    economies, where the government intervenes to some extent while still allowing private enterprise.
+    Economic Sectors:
+
+    Primary Sector: Involves extracting raw materials directly from the Earth, such as agriculture, mining, and fishing.
+    Secondary Sector: Involves processing and manufacturing raw materials into finished products, such as manufacturing
+    and construction.
+    Tertiary Sector: Involves providing services, like healthcare, education, entertainment, and retail.
+    Quaternary and Quinary Sectors: These sectors involve knowledge-based activities, such as information technology,
+    research, and high-level management.
+    Gross Domestic Product (GDP): This is a measure of the total economic output of a country. It includes the value of
+    all goods and services produced within the country's borders in a given time period.
+
+    Inflation: Inflation refers to the general increase in prices of goods and services over time. It can erode
+    purchasing power and impact economic stability.
+
+    Unemployment: Unemployment occurs when individuals who are able and willing to work are unable to find employment.
+    Different types of unemployment include frictional, structural, cyclical, and seasonal.
+
+    Supply and Demand: The foundation of market economies. Supply represents the quantity of a product that producers
+    are willing to provide, while demand represents the quantity that consumers are willing to purchase.
+
+    Monetary Policy: Managed by central banks, it involves controlling the money supply and interest rates to influence
+    economic growth and stability.
+
+    Fiscal Policy: This involves government decisions related to taxation and government spending to achieve economic
+    goals.
+
+    Trade and Globalization: The exchange of goods and services between countries fosters economic interdependence and
+    globalization, which can have both positive and negative effects.
+
+    Economic Indicators: These include measures like unemployment rate, inflation rate, consumer confidence, and more.
+    They provide insights into the overall health of an economy.
+
+    Economic Growth: The increase in a country's real GDP over time, indicating an expansion of economic activity.
+
+    Income Distribution: The way in which income is allocated among the population. Disparities in income distribution
+    can lead to socioeconomic challenges.
+
+    These are just a few aspects of the vast and complex world of economics. Economists study these concepts to better
+    understand how economies function and to develop strategies for improving economic conditions and addressing
+    challenges.
+
+
+    <center>
+
+      <h1>Education </h1>
+    </center>
+
+
+    Primary Education: The initial stage of formal education, typically covering early childhood to elementary school,
+    where basic literacy and numeracy skills are taught.
+    Secondary Education: Follows primary education and often includes middle or high school. It provides a broader
+    curriculum and prepares students for higher education or the workforce.
+    Higher Education: This includes colleges, universities, and vocational institutions that offer degree programs
+    (e.g., bachelor's, master's, doctoral) and specialized training.
+    Curriculum:
+
+    The set of subjects, courses, and learning experiences designed to guide a student's education. It outlines what is
+    taught and learned at different levels of education.
+    Teaching Methods:
+
+    Various approaches used by educators to facilitate learning, including lectures, discussions, group projects,
+    experiential learning, and online education.
+    Pedagogy and Andragogy:
+
+    Pedagogy refers to the methods and principles of teaching children, while andragogy focuses on teaching adults,
+    recognizing their self-directed and experience-based learning.
+    Assessment and Evaluation:
+
+    Methods for measuring a student's learning progress and understanding, including tests, quizzes, projects, and
+    presentations.
+    Educational Technology:
+
+    The integration of technology into education, such as online learning platforms, digital resources, interactive
+    tools, and virtual classrooms.
+    Inclusive Education:
+
+    The practice of ensuring that all students, including those with disabilities or diverse learning needs, have equal
+    access to quality education.
+    Lifelong Learning:
+
+    The concept of continuous learning throughout one's life to adapt to new challenges and opportunities.
+    Educational Psychology:
+
+    The study of how psychological principles can be applied to enhance teaching and learning, including motivation,
+    cognitive development, and behavior management.
+    Global Education:
+
+    The emphasis on developing a broader perspective by learning about other cultures, global issues, and
+    interconnectedness.
+    Education Policy:
+
+    Government decisions and regulations related to education, such as funding, curriculum standards, and teacher
+    training.
+    Education for Sustainable Development:
+
+    Integrating sustainability principles into education to promote environmental stewardship, social equity, and
+    economic viability.
+    Teacher Training and Professional Development:
+
+    Programs and initiatives to enhance the skills and knowledge of educators, keeping them up-to-date with best
+    practices.
+    Education and Socioeconomic Development:
+
+    Education is closely linked to economic growth, poverty reduction, and social progress. Educated populations tend to
+    have better job opportunities and contribute more effectively to their societies.
+    Education is a multifaceted field that plays a pivotal role in shaping individuals, communities, and the overall
+    progress of societies. It equips individuals with the tools they need to succeed, empowers critical thinking, and
+    fosters personal and societal growth.
+
+
+
+
+
+
+    </p>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgWFRYYGRgaGhoZHBocHRohGRocGhocHBgcGhocIS4lHCErIRgYJjgmKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHhISHjQrJCs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xABCEAABAwIDBAYHBgQFBQEAAAABAAIRAyEEEjEFQVFhBiJxgZGhEzJCscHR8AdSYnKS4RQjgsIWM6Ky8RUkY9LiQ//EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACQRAAICAgIBBAMBAAAAAAAAAAABAhEDIRIxUQQTQYEiMmEU/9oADAMBAAIRAxEAPwDGwhCXCfoMbq+Y4DVe6cRGhGGq3w76JGUMJkz1jfskQtPsbYLHuY70Ya3Wb+Gt5Wcp8ex0Q9h9Dc7A+o5wmCGi0ciulbGwraTGsGjRFzKdw+Ea1oA0Tj6RGi4cmTno1jGtklwVTtOplBLjDY1lP4nHim0lxXMek+2n1XuDXy2dI0HBLFjbYTkqG9o46k57hqN2uVUuJpCZsBrpHko10bpJk3K74xoxEORspOcYaCTyEq/2LsB9f2DBFj2G5utj0W6MGi4l7Tcb+3ipnmjEpRbM/wBH+iAewvryNIbcHvT+1+jLJHoyGWgzPdfculDBtSRgWzJC5P8ARu7NPbZkth7BbTYAWy77w/4RP6Phzi4sI48/kts2kBoExiaWYFQszbB46Ryzb2z8pgCPM23Kto7CqPEtb7/eui4rB0zIdlNuN/HVUz6+SQzQeAXTGbrRk0Zh3Rp+psOWvNVuMwBZe8SfLiul4dzHsl0zv7Vm+kdRjYYxgLj4DxVwySbpiaMZCEJ+sznKbhbpgNwhCXCEJgIhCEuEIQAhP4TCPqODWNc6TFhp28EgNVzshj2Fjs2RhcJ4kanuspk6QHTdlU20mMYG3YwCd+g3q1FZVGGx7XNE2Mb1A2jtynT9u+i89w5M1UqRoauJaLkosPig/wBXTiudYrpUXEgN6nHf2rU9HtpNrjKJhoF9ycsXGNsSm2zSZkEVkFgbHnkBOUaReQBqUQCl4F5YSR9di9d9HKTcJstzHgvIABE7z3BdT2MGFjZjksBs573gmtDcsFukkq7w2KydbMQDa65cly0OLo37YUXFgxLZWZw203F468gmOxaSjiJtr4Lm4OLs2UlJGC6T7ScczIc2NHGbzwWOJBGt98rp/TLDH0RewNnfO4cVhMFs3PEdtxquvFJcbMZKmI2NsttdwZcEm/BdE2X0Mo0yHEBx5j5qx2Bs9lNjYb1oueauQVy5s8m6RrGCq2Io0GtEAAJ5EEa5m7NkGgihBIYFFxtDOwtkiRuUtEhOnYmrMQ7ZFVj7dadOXyV7gdl5DLg024aKyrGNyrcRj8puY5LoUpTWjLjGIeOYxrCQO2FyjbWKD6jnN00+a2e3NvgAtg3BvPgsFVBJJO8rqwRa7MpNN6IpCIhPOakQuqyREIQnIQypgNwhlTrafBDKlYDYCn09qPa0MBsPHu4KLlSISaTAsau2KkANMDz7ydVFbUD3S/M4m2qZLEpjyLg3S4pdAXmJwdMtEwHRo3QKy2DtUtIY0BrW8T8rlZeg+T1neO9WhrU2iAbxcrOUdUB0Ju1moLF0cfRyjrvQWHtfwfJmLhLZIMjcgAlBdwh2ninNvqeJ3K1pU3up5nOka3VTTIBkhOGs4SATCiUb6AkYbGuYTMmFo9h9IcsZ3b48d6yLWkpbJaVMoKQ7N3jdsB2YOu3dpPbyVXQ2g2m8yIjTnwKptn12MOZ8u5funaFIVqkAhg8T3BRwSCzebB28KvVghwjs7lpaRdvVL0f6O06IDwS5xEyVowFw5ZRvR0QTrY20unSycASlQbd6QtodRsOqcNzeGbny9yws0LqpUDRLiAOJMBQn7XpTAOb3ea5/idp1Kjsz3knyHIAaIU8SUmM6C3aQOkKQzETwWGw2L5q8wmNlS2x6NCXTootemTq3vRYetKmNcqjNomUbMR0g2MXtLm3dwIgeSzD9jPZ6zZO5oldbfRB3JptFovaV2R9RoweLZy49FcQRm9HHKRPeoOL2O+ld5b43XVcdtSnTBzOFlhNrbcpvcYph3OFtjyTl8GcopdMyz28O5LotymXN8U7VxBJtA7AE0XTqunZI67EWIAAUnZ2yw8FzzYbgRKg7+CsMBivRzmuIMCd5UytLQCsZhKbGHKDmsLmVVNo8x3qyrPzDMGxe3/JUcYR5MWmO5KLrsBhuGnUj5pqpSjeCptbDNaYLyY3QdeF0w8hx0hUmBFIRKWWQDDhHBRyFSYCYQSsqCAJNHZbi4BxDQTE+9bLA9E8M9oHWzRqHHXs0VBhcZTzDM02Mi62ey8ex+6BGq58kplQq9lS/7PRq2se8LO47oviKROZoI3Eb/kulv2uxnrGAmH7cpPFussoZcie9lyjHycoDi03bEboSXmTMBaza9FjnHK0da5O9V7dljLmGl10qa7MijDFI2fWyPadLo6zQT8E7s95a8QNbTGipvQHUdjbVa9oG8DuV0HLFYFzm8IixCvqOLysL3mA0Fx7AJXnZMa7RvCT6ZG6U7c9AzIz/ADXi34W6Zjz4fsufOzEkuMkmSTcnj2p/GYp1ao6o/VxmOA3DsAt3JDG71zNm4TWKRTEWjs+aMUCCW3JaAXD7ocJbMaJbGfWqmxj1M3+uKs8M9wOnvUGiy4splNk2IQBeYWseCt6L5CzVGk0br8I5q0wzTOrh2E+4qRlyCqjpBhHOplzLuaJi9wNYA1Pv0VgzMPantHyTodxEeYVwk4u0RJJqjkGLxLnj1iZOgUF9BwMFpHctT0owww9fMB1agzNsLGeu0d5B/qCpsRjs2669fHLkk10ziap0R6WCDgbmeWg+abxGELefvT+GxRbZHUeSZbrxVW7ERWYR5EhpjsTTmkG/mpT8Q82JKaDhvlVbAl4fENA6w3diSMeBOVg7ZUYszGGNPvKW7Cubdwjt18FNIBJa6o46d6kN2Tb1xPCPjKKjlF5Uxu02MHVZJ3F0GPJJt/AFfUwJmGHN2BN18C5gJdFtRIJ8lL/6k82EXtYKdhdh1a13Oa0c7nwRya7GU9LAvIBA1QWup9F3gD+YUFPuLyFMwkKXT2g9ohroCYyowxbNJgSKmOe8AOJjzSqGKLNJUcNRgJcUBaUsc0tIdMlJxD3AAZ5adyrYS8x4qeIh5rGEGS7NxOinYDababMuQOM2PuVaGArTdF8MxriXXEwOaU2ktjXZZbEe97ZI7gI8E30nquawU7gPMn8rSD7yPBbDDsbHVACx3TuuBVptO5vm9xH9q8/Jku1R0wjRnA3cEQCj4WuXlxOgdA+PaplES4DiR5mFzGxvqGFawmIkloJ3w0Tffe4Qq4djvWYCdZIEy89QTryKdsXE8S0nsnqab8wRMFrWsR2FzusR+U++FAyG/ZFInqyBfQncNetO+3ao1bBBh1MWN/H4x3FXBGs2HW7mix0v61+YKiY1hnQc+ROov4p2BFY1R29J6LKoovDgc2T0kDIHcDedTExClOaW6rDbaZ/PeHaZ5aSLEZmmNx7xw4pgdNG16AqigajRVIBDLzcSBOkxumVaBct228nE5iOtmpukSNzDPAHQePNXGBeW7SLmuIFRz2PaSSDDer4EACwskmJouemOzvS4cloJewh7QBJO5wAHIzHEBYWnsPEET6CpHNpHkbrriTIXXizyhGkYyxqTs5jS6K1zdzco8T4NTmL2OaLZkjdLmkeErpaBCv8A1S+UR7K8nKKVVoHXjk2LHmeKQ/HMgDII5LV7Y6MZS59DQySw7vy8uSw1UXMrqxyjNWjGUXF0x6rih7Aj64KNUeXXcZQhKfTI1BHaCFqkkIYhDKnWsmwTr8KQNWzwBuiwEUWkerr2qbhNqOZrJjik4XCb3B3YFOwtNgIbkcXE6EX89Aok0A5/iZ/BBaOlsFsCWsQWXPH4L4yObQjDVIewzcXRZF1WQNBqOE5lR5UANhqGVOZUMqAG8qlYLEFjgZNu2E1k+vmk1amUWAWWTJGK/IqMXJ6N/gNtOIEjx+SynSzEmtiA5u5rBfkXm3ioeC2pUbq1o3DXzCS+o57sziSeK8/LODX4nTCMl2Iw1IMmN5J7z8FY7PE1GDi9g8wojGqw2WP5tPk9p8DK5zU3TD72kgHebEQPu2PmlBtoPMfF+l7iCkMBEnfInm+OtpxaRCdaOYG4HS24/BQMBN5gRc8JsAB3jzCaew2F9wm14HWMni0x2hOk7wInKd1pswX4H3pBM/G33XHMewO96AEsboRyOnHqgk/lAPa1G1unPXQz7IueJId4owSe3hOji7+3TsKUDb3T+Yhgt2keCAI9bCU3mX02ONrlozWsBmF/WEeCa/6ZS9MKwDg8HNZwLXaXg337juKmtA8PgSB3nXtagG6Rciw4b2jTcS49zkASqmLhriASQDDbAkiQACbCSIkmFmsVtjEuFqT6Qk2gOMA652yLi9uSvN0Dx4C2U+RPceKTFo+hrb9LQO4cVXJipFX0fxBc1/WOYOve92wJ46HwV2KzhN/HT2vkPoqM0XO4/G2ne7/SOKdA3jl8D8B4c0kwYnaGMAaQ4wDInx3dyxWK2bRzZvSAN4WnlYLQdJaWbDu4tLXDjYgHyLvErDkL0fSq43Zy5tM0eCZhqRzRLhvdu7OBSMdthjtGT+YKgLzonsDh87wy8nmPiujiu2Y8mFXex75jKN/BOtFMQde+/wCysMX0VrNPUhw4zcdqZ/w5V3jL5+5HOLXY3F+B/ZWKbMARuuTor7A02Ml0Ak6diyDMEGvDXv3+zM9i2mznsawaRz1WeRJdDiPfxR+4fFBOf9QpfeagsPo1+zn+Ox3pPZAUIhOBiPKu9JI5rGsqAanYQhMBrKhlTuVAMO4JAMPba6Zq3idJ9ynYrDuY2SNTGqgu1C871Url9HZhX4i2DinWJtoTzFymw6wKx2H/AJzDrBmOMAn4KuYVabABNdkR7RE8cjolDGbWCPIA8XbnX80u2/1et3N9rT8UJDWCIkRAA4wYvPLinIvPaeUARHfqO9QAWlzEyD/URDrcAIKQ4W3mx5yGnrdpcI96WPMRw9bQHvFklw8N2vskZfOQUAE4biZNwecwXRH4Y7wg/eZv1uWoER3dbx4pRvYEDUTOk3nuPV5IwDNrTcaWLhDdeEEd6ACM7ucRcCCMvnfvPBGGwbbvgcrR5uHgjyi0DmJ5ths9wcO4Kqq9JcK3EDCmsBWOjetvAAGaMub2omeV0wLT6BJ4y0Hyzd5SHHf334Wd7m+LSnXfH4x7s36ky4b7eHIkeTW/6kgA3z+In4g/oTnYOzhaY0/I3w5puDOkd/1vd/o8VTy59gsfc3y8WgG8bSzsez7zXN7JDh/afFy5/h8G95hjC48l0UfWvIH/AGv8+Kp/TMoE5XEGbixkrr9LNq0jmzRumUVHo1iHH1Mo4uIA+autlbANFwe4BzxpwaeI580t/SUCwEo8PtapVs2GD7xErpbyNbqjJcF0XwxMesoWI2tSu0gk8IPxsqjabnxPpm8wCBPmqeniG61CXRo0aHt4qI4U9lPI+i8q1ab/AFacTqSE3icKWsJBg7oAgJun0iY0Rkso+I6RuNmMA7fkrUZfCIco+StyO3knvKCaqYt5JJJugtaZnZGyoZE9kRhkq7JsZyosqfLOSKEWFjWVWWzoPVzR3Ce5QoRsbfUjsSkrQ0x3pE8dRomYJJPdHuKot6mbQeS6JJgAe8qFvXmZv3Z34/0QhuOHpvQ7/R5yf6ohTWFZDZ2KzbRqH8LmDuLY9y1jbBZM0H2ujmrno4D6YZdcroPOCPiqNX/Rdk1bW6jo8R80n0CNeYjUxlIGvqz1/glnWTGpPfEDxAFk2wWndHLQHr+Nk8de8eHsbtZUDGxJFrdh+8bG33fcjO+1usdx6otF+d+YRbrx6pnXe7+ZrwMIyd9jdxiQLgQB3iDyKAEkTObsPaWy/TlBS2ibmLwT2kQ7uDYKJo0F/ZEydwJJPboeaU08iNDuHrHqjlaQeCAGcViBTpve4gBrc0zwEDu0cvNW0NovqV34iSHmoXidWkO6gtwAA7l237Tsd6PAvaCJqQy9pa45Yt+Eu7wuDvFz8xxVoaR6N6MbXbi8NTriMzmw8bw4ABwtpZpPaArhvhc8tTP/AK/qXIvsa2vlfUwzjZ3WbffBn4nwXXI+cam8OjwGXvHJS1sTE37/ABvA+JB/pKPT63X4cmN8OYSnz38+Nx5l47ie4hGu7W86WPub7+5AA8/fbePg7wPfmNvsAqm3rAO77g99lppjymTbcD7n+DuKiYzZ7KsFzspaI1G+CZ7575XR6eajPZjmi5R0ZalhXEaCOdksvqNEZ8o0gG/gFcU8BSBOZ7XDm6I8ClvoYWL5e5xJXe8mzkUH5Mw+TqZQZh3O0aT2K+qU6Bu0W7D8VHxGQC09kkeSpS8Imq+SDT2c92jfNENnkGHEDsIPuSg46CUkMcTaSe9PYWhX8APvN8f2RI/4R/3H/pKCL/ofQxlRwnfRoZVVkDOVDKnsqLKiwGsqLKnsqGVKwKHGu67vrQR8FDrVcoc4+y0nwBS675e7mSfEqv2rVik++sDzk+QK8ubuTZ6UVUUjMdGHk4sk7w9b9oXO+iJ/7kH8Lj5LoTXKGUiS1aHosP5rjuyR4uaBKzLHLTdFHAPcdbBpPCXC/kpfQ0bCmO3QjXewwfGfJDMOBjqnuNmjXc66Qxg0G8ZOzLMO01N79iXzg7nRfQgiO6J71Iww3dvgjdGbV/jqikTrvB36eydNSbImgzEmbt/qiQ7Xh4owRY3jqmLaGzRrudfkgBOUb43cbZSSTf7rkcbjAsd4EZndbw1HbCIiBc7jOm4/zPFHUk9suHeRIFh93VAHMvtkxf8AkU/xOfGoGXqjxD5XJ6+/tO4cuC3X2r4jNjQNQGNIJ5uLfcxqwziI/fkrRa6JvRvHmhiqVRpjrAeJEf6gF6VoVWva149VzQR+Vwnd+Fo72ryq9xFwbggi/gvRP2f7RFbCMM+rbWOqS13gAY8UpEs0Rb2TwvrZ3+55HeEPrXtE/wCif6nc0om3dpPI+cwO1oQIv9aSAfj3OPBIQRb58eczP6j+k81HxTnNaS2L6hwEQTcGPzDwKktn6A1gfEz3ngmcSwOa6274W/t8Cqi6kmTJXFoo62Fe+LMEW6sfBMHZ7+A8VY4WowWKfFRoMg9y9Lk1o4FBPdlfhsO9ti0kfhIkdiVUwJNxTdPNzfmrym8OFvgm31TOWYPGR81HN2ae2q7KzC4Z7NKbe3MFPpM+9kbPiljDf+RoSHYZmpqSfrmpc7KUaH/4dn3z5fJBRfQs+95fsjU1/R/RRNoMm7rfXJLrNpxDQe2SqHY+3jiHhgptbYkkVGuiBwDbq99GuiMlLaZzNOOmh2g+mB1mye/5pVWtT3M8gEx6NH6NOkHJ0G+qw6MA8E0+uGAuyjqgnwE3TuRQds9WhUP4SP1dX4olSQRbbMUCqjpFWinH5j4CPirUuWc6TVbR+H3n9l5x6BX9Ez/3A/K5b5jlg+iH+efyO97Vt2OCQyZSctP0ScQ55HFnmXfue5ZD00RYmTFr857LFavoo89dzYPXp23+2DF9wKmXQ0a9hkAGBYsPICcp7wB4p3NYnLcjORPtACW6ch2plkeqSIuwn8EWOulgJSn1DE2zRP8AU09Ud/wUDFZLxH3mzycM2bTcbDgll2+OLoE7uqR8U3mF9NSAeIcZce4zbkkCq0zBaXM1AImW+oDwzAyOSAHzItf7u/UDN5i3NEJtqJ05Z7tPaII8khzWyRIjrCfwnrE9zhHJAvB3CbGObhDx/SBKAOB/aTVnaFSxAaA3suXD3gLKOmJ3AgHSNANP6ir/AO0OoTj8RaYc0z/Q1Z59UgERZ19eZ18FokKxNbU9n7/Bdd+xvHS11InVhIH5HEEd7XeQ4LkNU3BkHSe8A/Ehbr7J8XkxTRMAvLT2PYWjzARJaC9neC6/ZfzDj72HxTcjTu38Mv8Aa8dwRvfAmw3kSIE9aPID+rmiJ3d2vOJ7esT2tUDDceye+8zH+9v6iklwPC/beZj/AHM/UeCPNvjnGb+qPGB2EcoIv7456x88g/WUCI9FjREOAsNxKfeWQL5j2KG4vBOU2BPPvnnqm6tRzYLiLkNEjUuMABdsfySdnM9NqiS5vKOYTJa3eHHvCbD38fciJcN8LSibHGsadzgjyD6EpotJ3+aPKPooFY/HLyQUfP8AUoJUOzkGDpvawupNB9K0wWlwIa6IdaL20uDwKv6GKxNHI52ZzKbSMpJ6wsO2Y0UXo6wBjZe6nlYxnWpuJNhNiBABOsRrwUvaD21HNb6Z5aCGhooOyyB6+6x4i11xqUk9HTxjRZ7L6Tscwmucr8xIaGuJyknLYAkaESdYVrhtr0H6Pj8zXN94WEZhmZnZ39VnquDASQ4DMILhluwb78oSKuKw7SQKj3GJ9RsTwJDytFmkiHhizb7e203D0WVGjOXvYxrW6uDnAE8rTBNpI4qJ0x2jTbS9FnZ6RxZ/LzDPE5icszHV1+a5dtPpHUrO6jS5oLbuu45dPy6eSiUGVHVDVqTmN5JE5iInwVPLJpiWKKo0T8UAQ2bmSO6J94We2/UkuE8PgfipJzkzm4jQaGJ3cgmKeBzOLqpmeGovYT9aBZGg10VtVcfwEeJHyWtbVVLg8IymSW5wTzn4Kc14GpfPdH+1Fjol1KnWpgOAmo3WIOUF0d5AHetp0Mq9VzxqHtjwOYi+5hJvKz/R3ZbKry+r6RoYJaZIJebbhpBPktds5lCiMtN72dbN7RkkZZ6zeFlnJotJmhZUDiPV3t19gi59bjA+SN9Z0ezMebXdSb6HrHtCr24qnI675AMGTvudyJuNp+0950HrEWHq6Hd8VFjosjVdIiIDgd8y719+obJhVGyqTxisU5zwWuFItYCcrAxg9GYneGhxM+0E5/Fs1zVCZzSHO1iJ9bgmW1qTXSGPzEEE53zDssi7tOoz9I4IsKL4P3cSdxnreuNdRqmjXPfYiJ19Vvi3RVrto0/uvnWc79dDv4KOcWybtO72nbvV14IsKORdP7YrE6Q5zCLW9pu8SPVIWfZh21Awh7W9bK4TGVoIh19RDie5dj2rsrDV3BxosLwAC4gE2JOvGSVVVujjIAZToQJMPYCL6wI5C/JWpJEuLZh+k3RI4V9QNqZ2MZSqtJbDjSquLQ4gEgEOyiJvmm2ijdE8V6HEU3SL1GaG8tcDP5bxK6TQ2W51V1WuKbyWMpZbublpyWkNeIbfJ1fwzMm09mzaI0YwdjGi/bCbmg4m4NVu8iDBEwLdYb+LGx2jmk/xTY9Zs8ZbEkNd/ucHd54LJvpNfZ4Dhp1gDrrqndlMZhwRSDWNLpykkieIkyOzSyiyqNJ/FsHtNHezTrCPBgHcOKMYpm97db+rxg/39zu1VZxjz6o8B/yqnpPiqow1Qw8CGzY6ZxN47u9CYUI2b0mdiWF/o8rs72NaDmzhky4FsAmQSR3iRJGe6V7fqvpllJzWPpvY4S05y9jgbAk5Q2D605pI01k9DtkyfSMYC4EloHsGfWjib3TnT+i9jKbntAl7hNps3itFOS0TKEbsidH+l2NeXMrta9tOmxzqrWkEF8RmA6ustkACW81bu6SGTcEblk+hu0AcQKIBmpNN2uVwdI627R0ciAV0A9BGuuRlP4XEeRaR5J+7IjgivZ0hYACTr8OUIv8AEtMGDJ53gq9ofZ/hQZf6R3Ivsf0taVL/AMEYKCPRHtz1JHMS7VV7kieC8GW/xKzg7670FpP8B4ThU/V+yNHuS8hwj4Mxh9gE+uWzpofiFJb0YOoLf24LXUKYvp4p00x/wVnyZpRiW9EZmcpHIIP6CsPAH8pW5ZTjePAp2R9AotjpHL3/AGeke2Lnc0/NNVOgce2fD911R1JjokApD8G08R3/ADRbFSOUDoOJ9d36R/7JR6ER/wDp4t+RXUP4QD73l8lHqYdzdGE/1D5JWwpHNh0Mf7NRh7ZHzVnsboTBzVXNcRoASW7rmwnfZbJlMe00t7SfkpNPDM3ZJ7/mk7GUztimwzn9PyS6ewf/ACH9I+K0TKMcPBOMp81ND5GfGwWzJeZ5R7kbuj7N7neS0OTs8EeXkEcQ5FG3YVOLz9diU3YrOJ8T8lcmOf12IgBOp80+IWVjdis+75lE/YjDuPj+6tsvP3IZeYRQrKR+w2TPW/UknYrPunxHyVrXYZ0ae0n5FNZOTfH9kUO2QRslg9geE+4J1mBZ91n6D81Mc0wNdN0/MImNO8u8T8SikFsJmDaPZZ+n/wCktuG5N8P/AKUlp5oekCKQrGhQ5D671XdIsKH4XEMdYGlUuCZHVJBHfCts4TWIpB7HMc05XNLTpo4QY8U6Czn/ANl5c59bMBDRlbqDAy+Kf+1xn8mgf/I4eLP2C0HR7Zj6NRznta0Oo0WnK6Wh9MFrgJhxBaKZkjiq/wC0fZZxFPDiQGtxFPOZu1jnBpcIvaZndqqQN2zm/wBm2GzY4O3NeI7Ym3dK72uPbHwVPD1K2KdWotH8UWU2h/WltSq17S3dPUcPwiV1+m8OAcDIIBBGhBuCkuxMV3IdyNBMQXcgjQVAQKTRwTrkEFBQGapxBBNCZErap5iCCAFpDkEEmCDbqm67BGgQQQDK7DuMm6s8MbIIIYx9qUUaCBCHJI1QQUjFhBBBUBFqet9c0mm48UEEDH0tqCCBDgRFGggQzW0UKqgggZFwLBn0Hq/FWdSk3KOqNRuHFBBHwAdJgvYesfepaCCIikBBBBMQEEEEAf/Z"
+          class="card-img-top" alt="..."width="400px"height="400px">
+        <div class="card-body">
+          <h5 class="sindh Pakistan">Sindh</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img
+          src="https://c8.alamy.com/comp/2D7R5GY/lahore-fort-in-old-city-lahore-in-punjab-pakistan-lahore-fort-is-registered-as-a-unesco-world-heritage-site-in-1981-2D7R5GY.jpg"
+          class="card-img-top" alt="..."width="400px"height="400px">
+        <div class="card-body">
+          <h5 class="punjab">punjab</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img
+          src="https://c8.alamy.com/comp/FDY3KW/panorama-7-vertical-photos-stitched-of-concha-beach-playa-de-la-concha-FDY3KW.jpg"
+          class="card-img-top" alt="..."width="400px"height="400px">
+        <div class="card-body">
+          <h5 class="kpk">Kpk</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img
+          src="data:image/jpeg;base64,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"
+          class="card-img-top" alt="..."width="400px"height="400px">
+        <div class="card-body">
+          <h5 class="Bolochistan">Bolochistan</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+
+
+</html>
